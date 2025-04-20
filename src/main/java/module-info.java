@@ -3,6 +3,6 @@ module eu.guvercin.todolistapp {
     requires javafx.fxml;
 
 
-    opens eu.guvercin.todolistapp to javafx.fxml;
+    opens eu.guvercin.todolistapp.controller to javafx.fxml;
     exports eu.guvercin.todolistapp;
 }
