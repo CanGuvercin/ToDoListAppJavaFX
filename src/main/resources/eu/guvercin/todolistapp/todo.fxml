@@ -6,9 +6,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="eu.guvercin.todolistapp.controller.TodoController"
             prefHeight="400.0" prefWidth="600.0">
+
+
+    <MFXTextField fx:id="taskTitle" layoutX="50" layoutY="50" promptText="Enter Task Title">
+    </MFXTextField>
+    <MFXButton text="Add Task" layoutY="100" layoutX="50"/>
 
 </AnchorPane>
