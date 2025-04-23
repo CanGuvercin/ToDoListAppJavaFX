@@ -5,10 +5,15 @@ import io.github.palexdev.materialfx.controls.MFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.time.LocalDateTime;
 
 public class TodoController {
+
+    @FXML
+    private VBox taskContainer;
+
 
     public MFXTextField taskTitle;
     @FXML
@@ -37,11 +42,14 @@ public class TodoController {
             TaskCardController controller = loader.getController();
             controller.setTaskDetails(taskName,timeStamp,status);
 
-            taskCard.getChildren().add(taskCard);
+            taskContainer.getChildren().add(taskCard); //
 
         }catch (Exception e){
             e.printStackTrace();
         }
     }
+
+
+
 
 }

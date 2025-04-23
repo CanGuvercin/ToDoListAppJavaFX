@@ -24,6 +24,9 @@ public class Main extends Application {
                 getClass().
                         getResource("/eu/guvercin/todolistapp/todo.fxml")));
         Scene scene = new Scene(root);
+
+        String css = this.getClass().getResource("/eu/guvercin/todolistapp/styles.css").toExternalForm();
+        scene.getStylesheets().add(css);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.DECORATED);
         stage.setTitle("ToDo App");

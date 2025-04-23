@@ -23,7 +23,7 @@
             <MFXComboBox fx:id="statusComboBox" promptText="All" prefHeight="40"></MFXComboBox>
         </HBox>
         <ScrollPane fitToWidth="true" fitToHeight="true" vbarPolicy="NEVER">
-
+            <VBox fx:id="taskContainer" spacing="10" />
         </ScrollPane>
 
     </VBox>
