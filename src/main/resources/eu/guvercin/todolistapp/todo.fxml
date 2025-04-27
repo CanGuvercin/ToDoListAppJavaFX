@@ -31,6 +31,9 @@
     <VBox>
 
     </VBox>
+    <VBox>
+
+    </VBox>
     <MFXTextField fx:id="taskTitle" layoutX="50" layoutY="50" promptText="Enter Task Title">
     </MFXTextField>
     <MFXButton text="Add Task" layoutY="100" layoutX="50"/>
